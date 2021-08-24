@@ -14,7 +14,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       ServerChan通知
- * Plugin URI:        http://01.ftqq.com/serverchan-wordpress-notice/
+ * Plugin URI:        https://01.ftqq.com/2021/08/24/wordpress-comments-notice-plugin/
  * Description:       将WordPress通知推送到微信（目前支持：新评论通知）
  * Version:           1.0.0
  * Author:            Easy
@@ -76,7 +76,7 @@ function ftqq_serverchan_settings_sendkey_cb()
   */
  add_action('admin_init', 'ftqq_serverchan_settings_init');
 
- function sc_send($comment_id)
+ function ftqq_serverchan_comment_send($comment_id)
  {
      $text = '博客['.get_bloginfo('name').']有新的留言';
      $comment = get_comment($comment_id);
@@ -100,4 +100,4 @@ function ftqq_serverchan_settings_sendkey_cb()
      }
      return false;
  }
-add_action('comment_post', 'sc_send', 19, 2);
+add_action('comment_post', 'ftqq_serverchan_comment_send', 19, 2);
