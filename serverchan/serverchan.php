@@ -8,15 +8,15 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://example.com
- * @since             1.0.0
- * @package           Plugin_Name
+ * @link              https://01.ftqq.com/2021/08/24/wordpress-comments-notice-plugin/
+ * @since             1.0.1
+ * @package           Serverchan_Wordpress_notice
  *
  * @wordpress-plugin
  * Plugin Name:       ServerChan通知
  * Plugin URI:        https://01.ftqq.com/2021/08/24/wordpress-comments-notice-plugin/
  * Description:       将WordPress通知推送到微信（目前支持：新评论通知）
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Easy
  * Author URI:        http://01.ftqq.com/
  * Text Domain:       serverchan-wordpress-notice
@@ -33,7 +33,7 @@ if (! defined('WPINC')) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define('Serverchan_VERSION', '1.0.0');
+define('Serverchan_VERSION', '1.0.1');
 
 
 function ftqq_serverchan_settings_init()
